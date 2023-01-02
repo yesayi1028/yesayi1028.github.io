@@ -134,5 +134,10 @@ function enterFunc(e) {
 function complCount(){
     let text = `${complTasks}/${countTasks} completed`;
     let completeP = document.getElementById('completed');
+
+    if(countTasks !== 0) {
     completeP.innerText = text;
+    } else {
+        completeP.innerText = '';
+    }
 }
